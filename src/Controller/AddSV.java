@@ -4,11 +4,14 @@
  * and open the template in the editor.
  */
 package Controller;
-
+import GUI.SVAddFrame;
+import Entity.SinhVien;
+import java.util.ArrayList;
 /**
  *
  * @author Lemony
  */
-public class ControllerAddSV {
+public class AddSV {
+    ArrayList<SinhVien> listsv = new ArrayList<>();
     
 }
