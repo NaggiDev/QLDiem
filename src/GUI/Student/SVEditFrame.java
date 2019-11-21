@@ -46,7 +46,7 @@ public class SVEditFrame extends javax.swing.JFrame {
         DisposeBt = new javax.swing.JButton();
         ResetBt = new javax.swing.JButton();
         SaveBt = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        FrameNameLabel = new javax.swing.JLabel();
         MoBLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -133,9 +133,8 @@ public class SVEditFrame extends javax.swing.JFrame {
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DisposeBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(ResetBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(SaveBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(ResetBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(SaveBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -150,10 +149,10 @@ public class SVEditFrame extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("SỬA THÔNG TIN SINH VIÊN");
-        jLabel1.setToolTipText("");
-        jLabel1.setPreferredSize(new java.awt.Dimension(150, 30));
+        FrameNameLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        FrameNameLabel.setText("SỬA THÔNG TIN SINH VIÊN");
+        FrameNameLabel.setToolTipText("");
+        FrameNameLabel.setPreferredSize(new java.awt.Dimension(150, 30));
 
         MoBLabel.setText("Tháng ");
 
@@ -163,7 +162,7 @@ public class SVEditFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(83, 83, 83)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(FrameNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 105, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -206,7 +205,7 @@ public class SVEditFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(FrameNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -320,6 +319,7 @@ public class SVEditFrame extends javax.swing.JFrame {
     private javax.swing.JTextField ClassTField;
     private javax.swing.JButton DisposeBt;
     private javax.swing.JLabel DoBLabel;
+    private javax.swing.JLabel FrameNameLabel;
     private javax.swing.JLabel HoTenLabel;
     private javax.swing.JTextField HoTenTField;
     private javax.swing.JLabel MaSvLabel;
@@ -332,7 +332,6 @@ public class SVEditFrame extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> SexCBox;
     private javax.swing.JComboBox<String> ThangSinhCBox;
     private javax.swing.JLabel YoBLabel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

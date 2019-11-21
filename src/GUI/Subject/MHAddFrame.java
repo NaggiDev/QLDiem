@@ -27,21 +27,142 @@ public class MHAddFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        DisposeBt = new javax.swing.JButton();
+        ResetBt = new javax.swing.JButton();
+        SaveBt = new javax.swing.JButton();
+        SubjectCountLabel = new javax.swing.JPanel();
+        SubjectIDLabel = new javax.swing.JLabel();
+        SubjectNameLabel = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        SubjectIDTField = new javax.swing.JTextField();
+        SubjectNameTField = new javax.swing.JTextField();
+        SubjectCountTField = new javax.swing.JTextField();
+        FrameNameLabel = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        DisposeBt.setText("Thoát");
+        DisposeBt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DisposeBtActionPerformed(evt);
+            }
+        });
+
+        ResetBt.setText("Đặt lại");
+
+        SaveBt.setText("Lưu");
+        SaveBt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SaveBtActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DisposeBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ResetBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(SaveBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(SaveBt)
+                .addGap(28, 28, 28)
+                .addComponent(ResetBt)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(DisposeBt)
+                .addGap(32, 32, 32))
+        );
+
+        SubjectIDLabel.setText("Mã môn học");
+
+        SubjectNameLabel.setText("Tên môn học");
+
+        jLabel3.setText("Số tín chỉ");
+
+        javax.swing.GroupLayout SubjectCountLabelLayout = new javax.swing.GroupLayout(SubjectCountLabel);
+        SubjectCountLabel.setLayout(SubjectCountLabelLayout);
+        SubjectCountLabelLayout.setHorizontalGroup(
+            SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SubjectCountLabelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addGroup(SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(SubjectNameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(SubjectIDLabel)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addGroup(SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(SubjectIDTField)
+                    .addComponent(SubjectNameTField)
+                    .addComponent(SubjectCountTField, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        SubjectCountLabelLayout.setVerticalGroup(
+            SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SubjectCountLabelLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SubjectIDLabel)
+                    .addComponent(SubjectIDTField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SubjectNameLabel)
+                    .addComponent(SubjectNameTField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(SubjectCountLabelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(SubjectCountTField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(51, Short.MAX_VALUE))
+        );
+
+        FrameNameLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        FrameNameLabel.setText("THÊM THÔNG TIN MÔN HỌC");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(72, Short.MAX_VALUE)
+                .addComponent(SubjectCountLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(FrameNameLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(FrameNameLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SubjectCountLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void DisposeBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisposeBtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DisposeBtActionPerformed
+
+    private void SaveBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveBtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SaveBtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +200,17 @@ public class MHAddFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton DisposeBt;
+    private javax.swing.JLabel FrameNameLabel;
+    private javax.swing.JButton ResetBt;
+    private javax.swing.JButton SaveBt;
+    private javax.swing.JPanel SubjectCountLabel;
+    private javax.swing.JTextField SubjectCountTField;
+    private javax.swing.JLabel SubjectIDLabel;
+    private javax.swing.JTextField SubjectIDTField;
+    private javax.swing.JLabel SubjectNameLabel;
+    private javax.swing.JTextField SubjectNameTField;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
