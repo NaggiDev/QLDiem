@@ -15,36 +15,20 @@ public class SinhVien {
     public SinhVien() {
     }
 
-    public SinhVien(Name tenSv, int maSv, Date dob, String address, String sdt, String gioitinh) {
+    public SinhVien(String tenSv, int maSv, Date dob, String address, String gioitinh) {
         this.tenSv = tenSv;
         this.maSv = maSv;
         this.dob = dob;
         this.address = address;
-        this.sdt = sdt;
         this.gioitinh = gioitinh;
     }
-    Name tenSv;
+    String tenSv;
     int maSv;
     Date dob;
     String address;
-    String sdt;
     String gioitinh;
     
     public Object[] toObject(){
-        return new Object[]{this.tenSv,this.maSv,this.dob,this.address,this.sdt,this.gioitinh};
+        return new Object[]{this.tenSv,this.maSv,this.dob,this.address,this.gioitinh};
     }
-}
-
-class Name{
-
-    public Name() {
-    }
-
-    public Name(String ho, String ten, String dem) {
-        this.ho = ho;
-        this.ten = ten;
-        this.dem = dem;
-    }
-    String ho,ten,dem;  
-    
 }
