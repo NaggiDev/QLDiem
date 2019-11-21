@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Controller;
-import GUI.SVAddFrame;
+import GUI.Student.SVAddFrame;
 import Entity.SinhVien;
 import java.util.ArrayList;
 /**

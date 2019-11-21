@@ -3,8 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/SVMainFrame.java</file>
-            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/SVAddFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Subject/MHDisplayFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/Controller/AddSV.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Student/SVEditFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Student/SVDisplayFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Subject/MHMainFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/Entity/SinhVien.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/DAO/DBQuery.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Student/SVAddFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Subject/MHEditFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Subject/MHAddFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/GUI/Student/SVMainFrame.java</file>
+            <file>file:/E:/Document/NetBeans%20Project/QLDiem/src/DAO/StudentQuery.java</file>
         </group>
     </open-files>
 </project-private>

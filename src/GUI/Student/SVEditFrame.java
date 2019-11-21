@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GUI;
+package GUI.Student;
 
 /**
  *
  * @author Lemony
  */
-public class SVAddFrame extends javax.swing.JFrame {
+public class SVEditFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form FormNhapThongTinSV
+     * Creates new form SVEditFrame
      */
-    public SVAddFrame() {
+    public SVEditFrame() {
         initComponents();
     }
 
@@ -27,64 +27,29 @@ public class SVAddFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFrame1 = new javax.swing.JFrame();
-        jPopupMenu1 = new javax.swing.JPopupMenu();
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
         MaSvTField = new javax.swing.JTextField();
-        HoTenTField = new javax.swing.JTextField();
-        HoTenLabel = new javax.swing.JLabel();
-        MaSvLabel = new javax.swing.JLabel();
-        DoBLabel = new javax.swing.JLabel();
-        NgaySinhCBox = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
         ThangSinhCBox = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
+        YoBLabel = new javax.swing.JLabel();
         AddLabel = new javax.swing.JLabel();
+        ClassLabel = new javax.swing.JLabel();
+        HoTenTField = new javax.swing.JTextField();
+        ClassTField = new javax.swing.JTextField();
         AddTField = new javax.swing.JTextField();
+        HoTenLabel = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        MaSvLabel = new javax.swing.JLabel();
         SexCBox = new javax.swing.JComboBox<>();
+        DoBLabel = new javax.swing.JLabel();
         NamSinhTField = new javax.swing.JTextField();
+        NgaySinhCBox = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         DisposeBt = new javax.swing.JButton();
         ResetBt = new javax.swing.JButton();
         SaveBt = new javax.swing.JButton();
-        ClassLabel = new javax.swing.JLabel();
-        ClassTField = new javax.swing.JTextField();
-        jMenuBar1 = new javax.swing.JMenuBar();
-
-        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
-        jFrame1.getContentPane().setLayout(jFrame1Layout);
-        jFrame1Layout.setHorizontalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jFrame1Layout.setVerticalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
-        jMenu4.setText("File");
-        jMenuBar2.add(jMenu4);
-
-        jMenu5.setText("Edit");
-        jMenuBar2.add(jMenu5);
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane3.setViewportView(jTextArea1);
+        jLabel1 = new javax.swing.JLabel();
+        MoBLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setAutoRequestFocus(false);
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("NHẬP THÔNG TIN SINH VIÊN");
-        jLabel1.setToolTipText("");
-        jLabel1.setPreferredSize(new java.awt.Dimension(150, 30));
 
         MaSvTField.setActionCommand("<Not Set>");
         MaSvTField.addContainerListener(new java.awt.event.ContainerAdapter() {
@@ -98,9 +63,37 @@ public class SVAddFrame extends javax.swing.JFrame {
             }
         });
 
+        ThangSinhCBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06 ", "07", "08", "09", "10", "11", "12" }));
+        ThangSinhCBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ThangSinhCBoxActionPerformed(evt);
+            }
+        });
+
+        YoBLabel.setText("Năm sinh");
+
+        AddLabel.setText("Quê quán");
+
+        ClassLabel.setText("Lớp ");
+
+        ClassTField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ClassTFieldActionPerformed(evt);
+            }
+        });
+
         HoTenLabel.setText("Họ Tên");
 
+        jLabel13.setText("Giới tính");
+
         MaSvLabel.setText("Mã sinh viên");
+
+        SexCBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam", "Nữ"}));
+        SexCBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SexCBoxActionPerformed(evt);
+            }
+        });
 
         DoBLabel.setText("Ngày sinh");
 
@@ -113,28 +106,6 @@ public class SVAddFrame extends javax.swing.JFrame {
         NgaySinhCBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NgaySinhCBoxActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setText("Tháng ");
-
-        ThangSinhCBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06 ", "07", "08", "09", "10", "11", "12" }));
-        ThangSinhCBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ThangSinhCBoxActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setText("Năm sinh");
-
-        AddLabel.setText("Quê quán");
-
-        jLabel13.setText("Giới tính");
-
-        SexCBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam", "Nữ"}));
-        SexCBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SexCBoxActionPerformed(evt);
             }
         });
 
@@ -160,8 +131,8 @@ public class SVAddFrame extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(45, 45, 45)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(DisposeBt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DisposeBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(ResetBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(SaveBt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -179,14 +150,12 @@ public class SVAddFrame extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        ClassLabel.setText("Lớp ");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setText("SỬA THÔNG TIN SINH VIÊN");
+        jLabel1.setToolTipText("");
+        jLabel1.setPreferredSize(new java.awt.Dimension(150, 30));
 
-        ClassTField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ClassTFieldActionPerformed(evt);
-            }
-        });
-        setJMenuBar(jMenuBar1);
+        MoBLabel.setText("Tháng ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -195,9 +164,9 @@ public class SVAddFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(83, 83, 83)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 85, Short.MAX_VALUE))
+                .addGap(0, 105, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(MaSvLabel)
@@ -207,39 +176,38 @@ public class SVAddFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(HoTenLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DoBLabel)
-                            .addComponent(AddLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ClassLabel))
+                            .addComponent(ClassLabel)
+                            .addComponent(AddLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(NgaySinhCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(MoBLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ThangSinhCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(YoBLabel)
+                                .addGap(18, 18, 18)
+                                .addComponent(NamSinhTField, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(HoTenTField, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AddTField, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(ClassTField, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(18, 18, 18)
                                 .addComponent(jLabel13)
                                 .addGap(18, 18, 18)
-                                .addComponent(SexCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(NgaySinhCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jLabel12)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(ThangSinhCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel2)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(NamSinhTField, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(HoTenTField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(AddTField, javax.swing.GroupLayout.Alignment.LEADING)))))
+                                .addComponent(SexCBox, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -253,9 +221,9 @@ public class SVAddFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(DoBLabel)
                             .addComponent(NgaySinhCBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel12)
+                            .addComponent(MoBLabel)
                             .addComponent(ThangSinhCBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
+                            .addComponent(YoBLabel)
                             .addComponent(NamSinhTField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -265,50 +233,50 @@ public class SVAddFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel13)
                             .addComponent(SexCBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ClassLabel)
-                            .addComponent(ClassTField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(ClassTField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ClassLabel)))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(145, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void DisposeBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisposeBtActionPerformed
+    private void MaSvTFieldComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_MaSvTFieldComponentRemoved
         // TODO add your handling code here:
-    }//GEN-LAST:event_DisposeBtActionPerformed
+    }//GEN-LAST:event_MaSvTFieldComponentRemoved
 
     private void MaSvTFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaSvTFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MaSvTFieldActionPerformed
 
-    private void MaSvTFieldComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_MaSvTFieldComponentRemoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MaSvTFieldComponentRemoved
-
-    private void NgaySinhCBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NgaySinhCBoxActionPerformed
-        
-    }//GEN-LAST:event_NgaySinhCBoxActionPerformed
-
-    private void NgaySinhCBoxComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_NgaySinhCBoxComponentAdded
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NgaySinhCBoxComponentAdded
-
     private void ThangSinhCBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ThangSinhCBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ThangSinhCBoxActionPerformed
+
+    private void ClassTFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClassTFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ClassTFieldActionPerformed
 
     private void SexCBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexCBoxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SexCBoxActionPerformed
 
+    private void NgaySinhCBoxComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_NgaySinhCBoxComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NgaySinhCBoxComponentAdded
+
+    private void NgaySinhCBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NgaySinhCBoxActionPerformed
+
+    }//GEN-LAST:event_NgaySinhCBoxActionPerformed
+
+    private void DisposeBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisposeBtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DisposeBtActionPerformed
+
     private void SaveBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveBtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SaveBtActionPerformed
-
-    private void ClassTFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClassTFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ClassTFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,23 +295,20 @@ public class SVAddFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SVAddFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SVEditFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SVAddFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SVEditFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SVAddFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SVEditFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SVAddFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SVEditFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SVAddFrame().setVisible(true);
+                new SVEditFrame().setVisible(true);
             }
         });
     }
@@ -359,24 +324,16 @@ public class SVAddFrame extends javax.swing.JFrame {
     private javax.swing.JTextField HoTenTField;
     private javax.swing.JLabel MaSvLabel;
     private javax.swing.JTextField MaSvTField;
+    private javax.swing.JLabel MoBLabel;
     private javax.swing.JTextField NamSinhTField;
     private javax.swing.JComboBox<String> NgaySinhCBox;
     private javax.swing.JButton ResetBt;
     private javax.swing.JButton SaveBt;
     private javax.swing.JComboBox<String> SexCBox;
     private javax.swing.JComboBox<String> ThangSinhCBox;
-    private javax.swing.JFrame jFrame1;
+    private javax.swing.JLabel YoBLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPopupMenu jPopupMenu1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
