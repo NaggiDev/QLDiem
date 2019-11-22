@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package GUI.Subject;
+import DAO.*;
 
 /**
  *
@@ -16,6 +17,7 @@ public class MHDisplayFrame extends javax.swing.JFrame {
      */
     public MHDisplayFrame() {
         initComponents();
+        
     }
 
     /**
@@ -79,7 +81,9 @@ public class MHDisplayFrame extends javax.swing.JFrame {
                 "STT", "Mã môn học", "Tên môn học", "Số tín chỉ"
             }
         ));
+        jTable1.setColumnSelectionAllowed(true);
         jScrollPane2.setViewportView(jTable1);
+        jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setPreferredWidth(3);
         }

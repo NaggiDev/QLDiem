@@ -83,40 +83,34 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-              <Component id="FrameNameLabel" min="-2" pref="472" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="105" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="MaSvLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="MaSvTField" min="-2" pref="294" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                      <Component id="FrameNameLabel" min="-2" pref="472" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="HoTenLabel" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="DoBLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="AddLabel" min="-2" pref="72" max="-2" attributes="0"/>
-                          <Component id="ClassLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="ClassTField" min="-2" pref="154" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="SexLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="SexCBox" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="HoTenLabel" max="32767" attributes="0"/>
+                                  <Component id="DoBLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ClassLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MaSvLabel" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="AddLabel" min="-2" pref="72" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="NgaySinhCBox" min="-2" pref="49" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="MoBLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace min="61" pref="61" max="-2" attributes="0"/>
                               <Component id="ThangSinhCBox" min="-2" pref="56" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="YoBLabel" min="-2" max="-2" attributes="0"/>
@@ -124,13 +118,28 @@
                               <Component id="NamSinhTField" min="-2" pref="61" max="-2" attributes="0"/>
                           </Group>
                           <Component id="HoTenTField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="AddTField" alignment="0" min="-2" pref="294" max="-2" attributes="0"/>
+                          <Component id="AddTField" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="ClassTField" min="-2" pref="154" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="SexCBox" min="-2" pref="81" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="MaSvTField" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="103" max="32767" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="226" max="-2" attributes="0"/>
+                  <Component id="MoBLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -139,43 +148,50 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="FrameNameLabel" min="-2" pref="58" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="MaSvTField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="MaSvLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="HoTenTField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="HoTenLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DoBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="NgaySinhCBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="MoBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ThangSinhCBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="YoBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="NamSinhTField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="AddLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="AddTField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="SexLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="SexCBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ClassLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ClassTField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="99" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="MaSvTField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MaSvLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="112" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="HoTenTField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HoTenLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="NgaySinhCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ThangSinhCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="YoBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="NamSinhTField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DoBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="AddTField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AddLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SexCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ClassTField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ClassLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="MoBLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jPanel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="84" max="32767" attributes="0"/>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -193,6 +209,26 @@
         </Property>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="HoTenLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="H&#x1ecd; T&#xea;n"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="MoBLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Th&#xe1;ng "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="MaSvLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M&#xe3; sinh vi&#xea;n"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JTextField" name="MaSvTField">
       <Properties>
         <Property name="actionCommand" type="java.lang.String" value="&lt;Not Set&gt;"/>
@@ -202,21 +238,47 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MaSvTFieldActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="HoTenTField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="HoTenLabel">
+    <Component class="javax.swing.JComboBox" name="SexCBox">
       <Properties>
-        <Property name="text" type="java.lang.String" value="H&#x1ecd; T&#xea;n"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Nam&quot;, &quot;N&#x1eef;&quot;})" type="code"/>
+        </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SexCBoxActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="MaSvLabel">
+    <Component class="javax.swing.JComboBox" name="ThangSinhCBox">
       <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe3; sinh vi&#xea;n"/>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;04&quot;, &quot;05&quot;, &quot;06 &quot;, &quot;07&quot;, &quot;08&quot;, &quot;09&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot; })" type="code"/>
+        </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ThangSinhCBoxActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="DoBLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ng&#xe0;y sinh"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="YoBLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="N&#x103;m sinh"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="NamSinhTField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="AddLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qu&#xea; qu&#xe1;n"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="NgaySinhCBox">
@@ -233,55 +295,19 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="MoBLabel">
+    <Component class="javax.swing.JLabel" name="ClassLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Th&#xe1;ng "/>
+        <Property name="text" type="java.lang.String" value="L&#x1edb;p "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="ThangSinhCBox">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;04&quot;, &quot;05&quot;, &quot;06 &quot;, &quot;07&quot;, &quot;08&quot;, &quot;09&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot; })" type="code"/>
-        </Property>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="HoTenTField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="ClassTField">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ThangSinhCBoxActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ClassTFieldActionPerformed"/>
       </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="YoBLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="N&#x103;m sinh"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="AddLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Qu&#xea; qu&#xe1;n"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="AddTField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="SexLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gi&#x1edb;i t&#xed;nh"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="SexCBox">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Nam&quot;, &quot;N&#x1eef;&quot;})" type="code"/>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SexCBoxActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JTextField" name="NamSinhTField">
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
 
@@ -290,12 +316,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="DisposeBt" alignment="1" min="-2" pref="65" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="ResetBt" max="32767" attributes="0"/>
-                          <Component id="SaveBt" alignment="0" max="32767" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="DisposeBt" alignment="0" max="32767" attributes="0"/>
+                      <Component id="ResetBt" alignment="0" max="32767" attributes="0"/>
+                      <Component id="SaveBt" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="49" max="32767" attributes="0"/>
               </Group>
@@ -339,15 +363,5 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="ClassLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="L&#x1edb;p "/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="ClassTField">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ClassTFieldActionPerformed"/>
-      </Events>
-    </Component>
   </SubComponents>
 </Form>

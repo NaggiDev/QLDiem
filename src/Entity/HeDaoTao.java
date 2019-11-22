@@ -10,11 +10,30 @@ package Entity;
  * @author Lemony
  */
 public class HeDaoTao {
-    int maHe;
-    String tenHe;
+    private String tenHe,maHe;
 
-    public HeDaoTao(int maHe, String tenHe) {
+
+    public HeDaoTao(String maHe, String tenHe) {
         this.maHe = maHe;
+        this.tenHe = tenHe;
+    }
+
+    public HeDaoTao() {
+    }
+
+    public String getMaHe() {
+        return maHe;
+    }
+
+    public void setMaHe(String maHe) {
+        this.maHe = maHe;
+    }
+
+    public String getTenHe() {
+        return tenHe;
+    }
+
+    public void setTenHe(String tenHe) {
         this.tenHe = tenHe;
     }
     public Object[] toObject(){
