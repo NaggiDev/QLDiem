@@ -21,9 +21,14 @@ public class StudentQuery {
     public StudentQuery() {
         this.qr = new DBQuery();
     }
-
+    
+    /**
+     *
+     * @param a
+     * @throws SQLException
+     */
     public void AddStudent(SinhVien a) throws SQLException {
-        String sql = "INSERT INTO dbo.SinhVien (MaSV, TenSV, GioiTinh, NgaySinh, QueQuan, MaLop) VALUE(?,?,?,?,?,?)";
+        String sql = "INSERT INTO dbo.SinhVien(MaSV, TenSV, GioiTinh, NgaySinh, QueQuan, MaLop) VALUE(?,?,?,?,?,?)";
         try {
             PreparedStatement ps = qr.getConnection().prepareStatement(sql);
             ps.setString(1, a.getMaSv());
@@ -35,7 +40,7 @@ public class StudentQuery {
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "THEM SINH VIEN THANH CONG");
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "THEM THAT BAI, SINH VIEN KHONG HOP LE");
+            JOptionPane.showMessageDialog(null, "THEM THAT BAI");
             e.printStackTrace();
         }
     }

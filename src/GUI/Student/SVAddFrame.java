@@ -5,6 +5,16 @@
  */
 package GUI.Student;
 
+import DAO.StudentQuery;
+import Entity.SinhVien;
+import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Lemony
@@ -156,6 +166,11 @@ public class SVAddFrame extends javax.swing.JFrame {
         ResetBt.setText("Đặt lại");
 
         SaveBt.setText("Lưu");
+        SaveBt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SaveBtMouseClicked(evt);
+            }
+        });
         SaveBt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveBtActionPerformed(evt);
@@ -312,12 +327,49 @@ public class SVAddFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_ClassTFieldActionPerformed
 
     private void DisposeBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DisposeBtActionPerformed
-        // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_DisposeBtActionPerformed
 
     private void SaveBtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveBtActionPerformed
-        // TODO add your handling code here:
+        String masv = MaSvTField.getText();
+        String tensv = HoTenTField.getText();
+        boolean gt = true;
+        if (SexCBox.getSelectedItem().toString().equalsIgnoreCase("Nam")) {
+            gt = true;
+        } else {
+            gt = false;
+        }
+        String day = NgaySinhCBox.getSelectedItem().toString();
+        String month = ThangSinhCBox.getSelectedItem().toString();
+        String dob = NamSinhTField.getText() + "/" + month + "/" + day;
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd"); //ua cai sdf nay dung o dau day
+
+        try {
+            sdf.parse(dob); //o dit me mat le
+        } catch (ParseException ex) {
+            Logger.getLogger(SVAddFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        String quequan = AddTField.getText();
+        String lop = ClassTField.getText();
+        SinhVien a = null;
+        try {
+            a = new SinhVien(tensv, masv, sdf.parse(dob), gt, quequan, lop);
+        } catch (ParseException ex) {
+            Logger.getLogger(SVAddFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        StudentQuery qr = new StudentQuery();
+        try {
+            qr.AddStudent(a);
+        } catch (SQLException ex) {
+            Logger.getLogger(SVAddFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }//GEN-LAST:event_SaveBtActionPerformed
+
+    private void SaveBtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SaveBtMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SaveBtMouseClicked
 
     /**
      * @param args the command line arguments
